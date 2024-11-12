@@ -13,6 +13,7 @@ import {
     Footprints,      // untuk Shoes
     Clock            // untuk Watches
    } from 'lucide-react'
+import Link from 'next/link';
 
 
 export default function ProductPage() {
@@ -188,12 +189,12 @@ export default function ProductPage() {
            Experience the future of fashion analysis with our AI-powered technology.
            Get started today!
          </p>
-         <a 
-           href="/"
-           className="inline-block bg-white text-[#FF4820] px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all"
-         >
-           Try Now
-         </a>
+         <Link 
+          href="/" 
+          className="inline-block bg-white text-[#FF4820] px-8 py-3 rounded-lg font-medium hover:bg-opacity-90 transition-all"
+        >
+          Try Now
+        </Link>
        </div>
      </main>
      <Footer />

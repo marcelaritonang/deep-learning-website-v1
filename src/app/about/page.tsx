@@ -3,6 +3,7 @@
 
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Link from 'next/link'
 
 export default function AboutPage() {
   return (
@@ -62,12 +63,9 @@ export default function AboutPage() {
 
             {/* Back to Home Button */}
             <div className="text-center">
-              <a 
-                href="/"
-                className="inline-block px-8 py-3 bg-gradient-to-r from-[#E43D12] to-[#D6536D] text-white rounded-lg hover:opacity-90 transition-all"
-              >
+            <Link href="/" className="inline-block px-8 py-3 bg-gradient-to-r from-[#E43D12] to-[#D6536D] text-white rounded-lg hover:opacity-90 transition-all">
                 Back to Home
-              </a>
+            </Link>
             </div>
           </div>
         </div>

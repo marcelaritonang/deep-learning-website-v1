@@ -58,7 +58,7 @@ export default function PackagingPage() {
          </h1>
          <p className="text-gray-600 max-w-2xl mx-auto text-lg">
            Select the perfect package that suits your needs. From basic fashion detection 
-           to enterprise solutions, we've got you covered.
+           to enterprise solutions, we&apos;ve got you covered.
          </p>
        </div>
 
@@ -123,19 +123,19 @@ export default function PackagingPage() {
            Need a Custom Solution?
          </h2>
          <p className="text-gray-600 max-w-2xl mx-auto mb-8">
-           Contact us to discuss your specific requirements. We'll create a tailored 
+           Contact us to discuss your specific requirements. We&apos;ll create a tailored 
            package that perfectly matches your needs.
          </p>
          <button className="py-3 px-8 bg-[#FF4820] text-white rounded-lg hover:bg-opacity-90 transition-all font-medium">
          <a 
-  href="https://wa.me/+6281398517263" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="inline-flex items-center gap-2 py-3 px-8 bg-[#FF4820] text-white rounded-lg hover:bg-opacity-90 transition-all font-medium"
->
-  <MessageCircle className="w-5 h-5" />
-  Contact Sales
-</a>
+          href="https://wa.me/+6281398517263" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 py-3 px-8 bg-[#FF4820] text-white rounded-lg hover:bg-opacity-90 transition-all font-medium"
+        >
+          <MessageCircle className="w-5 h-5" />
+          Contact Sales
+        </a>
          </button>
        </div>
      </main>

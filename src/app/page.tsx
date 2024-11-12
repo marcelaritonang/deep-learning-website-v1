@@ -5,6 +5,7 @@ import React, { useState } from 'react'
 import { Camera, Upload, Sparkles } from 'lucide-react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Image from 'next/image' // Import Image dari next/image
 
 // Define the type for fashion categories
 interface FashionCategory {
@@ -85,10 +86,14 @@ export default function Home() {
                           }`}>
                 {preview ? (
                   <div className="relative">
-                    <img
+
+                    <Image
                       src={preview}
                       alt="Preview"
                       className="max-h-64 mx-auto rounded-lg"
+                      width={500} // Sesuaikan width
+                      height={500} // Sesuaikan height
+                      layout="responsive"
                     />
                     <div className="absolute inset-0 bg-black/40 flex items-center justify-center rounded-lg opacity-0 hover:opacity-100 transition-opacity">
                       <p className="text-white">Click to change image</p>
