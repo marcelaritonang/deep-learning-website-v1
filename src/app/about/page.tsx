@@ -4,9 +4,11 @@
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Link from 'next/link'
+import PageTransition from '@/components/PageTransition'
 
 export default function AboutPage() {
   return (
+    <PageTransition>
     <div className="min-h-screen bg-[#F5F5F3]">
       <Navbar />
       <main className="container mx-auto px-4 pt-24 pb-12">
@@ -72,5 +74,6 @@ export default function AboutPage() {
       </main>
       <Footer />
     </div>
+    </PageTransition>
   )
 }

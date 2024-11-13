@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import { MessageCircle } from 'lucide-react'
 import { ShoppingBag, Package, Gift } from 'lucide-react'
+import PageTransition from '@/components/PageTransition'
 
 export default function PackagingPage() {
  const packages = [
@@ -48,6 +49,7 @@ export default function PackagingPage() {
  ]
 
  return (
+  <PageTransition>
    <div className="min-h-screen bg-[#F5F5F3]">
      <Navbar />
      <main className="container mx-auto px-4 pt-24 pb-12">
@@ -141,5 +143,6 @@ export default function PackagingPage() {
      </main>
      <Footer />
    </div>
+   </PageTransition>
  )
 }

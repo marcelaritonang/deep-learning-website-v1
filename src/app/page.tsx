@@ -6,6 +6,7 @@ import { Camera, Upload, Sparkles } from 'lucide-react'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Image from 'next/image' // Import Image dari next/image
+import PageTransition from '@/components/PageTransition'
 
 // Define the type for fashion categories
 interface FashionCategory {
@@ -63,6 +64,7 @@ export default function Home() {
   };
 
   return (
+    <PageTransition>
     <div className="min-h-screen bg-[#EBE9E1]">
       <Navbar />
             <main className="container mx-auto px-4 pt-20 pb-12 ">
@@ -197,5 +199,6 @@ export default function Home() {
         </main>
         <Footer />
         </div>
+        </PageTransition>
         )
         }
